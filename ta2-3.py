@@ -18,3 +18,10 @@ else:
         first, second = second, first + second
         index += 1
     print(second)
+
+    for i in range(2, n):
+        temp = first + second
+        first = second
+        second = temp
+
+    print(second)
