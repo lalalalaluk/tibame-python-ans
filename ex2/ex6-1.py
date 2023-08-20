@@ -1,16 +1,10 @@
-a = int(input())
-
-
-t = 0
-tone = 0
-ttwo = 0
-
-while a >= 1:
-    if a % 3 == 0:
-        t+=1
-    elif a % 3 == 1:
-        tone +=1 
-    elif a % 3 == 2:
-        ttwo +=1
-    a -= 1
-print(str(t)+" "+str(tone)+" "+str(ttwo))
+m1,m2,m3=0,0,0
+for i in range(0,int(input())):
+  a = int(input())
+  if a % 3 == 0:
+    m1+=1
+  elif a % 3 == 1:
+    m2+=1
+  else:
+    m3+=1
+print(m1,m2,m3)
